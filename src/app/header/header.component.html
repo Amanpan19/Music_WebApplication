@@ -1,0 +1,34 @@
+<!-- <app-dashboard></app-dashboard> -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="title" href="#"><img src="../../assets/spotify-logo-png-7053.png" alt="" width="40px" height="40px">{{title}}</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="list">
+            <li><a routerLink="/song" ><mat-icon>home</mat-icon></a></li>
+            <li><a routerLink="/registration" id="sec">signUp</a></li>
+            <li id="third"><a routerLink="/login" id="login" (click)="clicked()">{{type}}</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="sidenav">
+    <div>
+    <!-- <p>{{userName|json}}</p> -->
+    
+  </div>
+    <div id="playlist">
+          <a routerLink="/playlist">Create Playlist</a> 
+    </div>
+    <div id="showSong">
+      <a routerLink="/songInPlaylist">song in Playlist</a> 
+</div>
+  </div>
+  <div class="rightNav">
+    <div id="playlist">
+      <a routerLink="/show">Show Playlist</a> 
+    </div>
+  </div>
+ 

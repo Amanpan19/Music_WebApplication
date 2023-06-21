@@ -1,0 +1,24 @@
+
+<div class="cont">
+<h1>To Continue, login to Spotify</h1>
+<div id="login">
+        <form (ngSubmit)="loginCheck()">
+            <mat-form-field>
+                <mat-label>Email</mat-label>
+                <input matInput name="email" [(ngModel)]="login.email" required>
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>Password</mat-label>
+                <input matInput required type="password" required name="password" [(ngModel)]="login.password" >
+            </mat-form-field>
+            <br>
+            <button mat-raised-button color="primary" type="submit" >Login</button>
+        </form>
+</div>
+
+
+<div id="split">
+    <img src="../../assets/folio.png" alt="">
+</div>
+</div>

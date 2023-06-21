@@ -1,0 +1,17 @@
+<div>
+<app-dashboard></app-dashboard>
+</div>
+<div id="main">
+    <p id="name" *ngIf="flag"> Welcome...,{{userName.name}}</p>
+    <div *ngFor="let song of songs" id="cont">
+
+        <img src="../../assets/{{song.songName}}.jpg" alt="{{song.songName}}">
+
+        <p id="intro">{{song.songName}}</p>
+        <span>{{song.rating}}</span>
+        <p>{{song.artistName}}</p>
+        
+        <button mat-raised-button color="primary" [disabled]="isDisabled" (click)="songPlay(song.songName)">Play</button>
+        <button mat-raised-button color="primary" [disabled]="isDisabled" id="add" (click)="goToPlaylist(song)" >Add</button>
+    </div>
+</div>

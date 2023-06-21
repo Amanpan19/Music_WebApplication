@@ -1,0 +1,52 @@
+
+#login{
+    width: 350px;
+    height: 250px;
+    margin:10%;
+    margin-left:20%;
+    background:linear-gradient(to right, rgb(148, 104, 251),blueviolet);
+    border-radius: 20px;
+}
+h1{
+    margin-left: 21%;
+    font-family: cursive;
+    color:yellow;
+}
+form{
+    margin-left:19%;
+    margin-right: 19%;
+}
+mat-form-field{
+    margin-top: 9%;
+}
+button{
+    margin-left:32%;
+}
+.cont{
+    position: relative;
+    top: 10%;
+    overflow: hidden;
+}
+
+#split{
+    height: 100%;
+    width: 40%;
+    position:absolute;
+    right: 12%;
+    bottom: 0;
+}
+img{
+    margin-left: 10%;
+    width:80%;
+    height:90%;
+    
+}
+
+#rightSideBar{
+    width: 200px;
+    background: black;
+    position: fixed;
+    top:40px;
+    right: 0;
+    height: 100%;
+}

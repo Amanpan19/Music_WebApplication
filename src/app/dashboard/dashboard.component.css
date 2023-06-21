@@ -1,0 +1,10 @@
+h1{
+    padding: 3px 10px;
+    position: fixed;
+    top: 60px;
+    left: 70px;
+    border-radius:8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+}

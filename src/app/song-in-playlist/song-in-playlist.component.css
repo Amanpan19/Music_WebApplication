@@ -1,0 +1,56 @@
+#main{
+    color: white;
+    width: 65%;
+    height: auto;
+    margin: auto;
+    margin-top:-30%;
+}
+
+#cont{
+    margin: auto;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 6px;
+    background:rgb(30, 29, 31);
+    position: relative;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    transition: 0.7s;
+}
+img:hover{
+    transform: scale(1.06);
+    transition: 0.7s;
+}
+
+#intro{
+    margin-top: 5px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+span{
+    position: absolute;
+    right: 4%;
+}
+
+button{
+    margin-left:30%;
+    transition: ease-out 0.7s;
+}
+button:hover{
+    transform: scale(0.9);
+    transition: ease 0.7s;
+}
+
+form{
+    margin-top:30%;
+}
+button{
+    margin-left: 50px;
+}

@@ -1,0 +1,33 @@
+
+#main{
+    
+    width: 50%;
+    margin:10% 20% ;
+}
+#cont{
+    display: inline-block;
+    width: 30%;
+    background-color: black;
+    height: 100px;
+    padding: 20px;
+    margin: 20px;
+    background-image: url(../../assets/rose-petals.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+
+}
+
+#plyName p{
+    color: white;
+    text-align: center;
+}
+button{
+    margin:auto 5%;
+}
+button a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}

@@ -1,0 +1,54 @@
+
+<div class="formdis">
+<form (ngSubmit)="submitPlaylist()" [formGroup]="addPlaylist">
+  <mat-form-field>
+    <mat-label>PlayList Name</mat-label>
+    <input matInput type="text" formControlName="playlistName">
+  </mat-form-field>
+  
+  <div formArrayName="songList" id="dis">
+  <div formGroupName=0>
+    <mat-form-field>
+        <mat-label>Enter Song Name</mat-label>
+        <input matInput type="text" formControlName="songName">
+        <!-- <mat-error *ngIf="songName?.errors?.['required']">
+          Song Name is required..
+        </mat-error> -->
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <mat-label>Enter Artist Name</mat-label>
+        <input matInput type="text" formControlName="artistName">
+        <!-- <mat-error *ngIf="artistName?.errors?.['required']">
+          Artist required!!!
+        </mat-error> -->
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <mat-label>Rating</mat-label>
+        <input matInput type="text" formControlName="rating">
+    </mat-form-field>
+  </div>
+</div>
+<br>
+<button mat-raised-button color="primary" type="submit" [disabled]="!addPlaylist.valid">Add</button>
+<button mat-raised-button  id="reset"  type="reset"  color="primary" (click)="resetForm()">Reset</button>
+</form>
+
+</div>
+<div id="position">
+<app-songs></app-songs>
+</div>
+
+
+<div id="main_Cont">
+    <span id="p">Playlist Available</span>
+    <div id="cont" *ngFor="let lists of playlistAvail">
+    <p id="intro">{{lists.playlistName}}</p>
+    <hr>
+    <span>Songs</span>
+    <div class="songList" *ngFor="let song of lists.songList">
+    <p id="intro">{{song.songName}}</p>
+    </div>
+    </div>
+</div>

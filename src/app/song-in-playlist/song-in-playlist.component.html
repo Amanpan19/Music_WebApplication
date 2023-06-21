@@ -1,0 +1,23 @@
+<app-dashboard></app-dashboard>
+<form (ngSubmit)="getSong()" [formGroup]="formList">
+    <mat-form-field>
+      <mat-label>Enter playlist name</mat-label>
+      <input matInput formControlName="playlistName" required>
+    </mat-form-field>
+    <br>
+    <button mat-raised-button color="primary" type="submit">Get Songs</button>
+  </form>
+<div id="main">
+    <div *ngFor="let song of songData" id="cont" >
+
+    <!-- just for precaution purpose -->
+        <ng-container *ngIf="song.songName"> 
+        <img src="../../assets/{{song.songName}}.jpg" alt="{{song.songName}}">
+
+        <p id="intro">{{song.songName}}</p>
+        <span>{{song.rating}}</span>
+        <p>{{song.artistName}}</p>
+        
+        <button mat-raised-button color="primary" (click)="songPlay(song.songName)">Play</button>
+    </ng-container>
+    </div>

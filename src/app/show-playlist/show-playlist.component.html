@@ -1,0 +1,14 @@
+<app-dashboard></app-dashboard>
+<div id="main">
+    <div *ngFor="let playlist of playlistAvail" id="cont">
+        <div id="plyName">
+      <p>{{playlist.playlistName}}</p>
+      <button mat-raised-button color="accent">
+        show
+    </button>
+    <button mat-raised-button color="accent" (click)="deletePlaylist(playlist.playlistName)">
+        delete
+    </button>
+    </div>
+    </div>
+</div>

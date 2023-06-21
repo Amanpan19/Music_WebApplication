@@ -1,0 +1,37 @@
+
+<div>
+    <p id="tag">Sign up for free and start listening</p>
+   <div class="formStyle">
+        <form (ngSubmit)="addUser()" [formGroup]="registrationForm">
+            <mat-form-field id="first">
+                <mat-label>What's your email?</mat-label>
+                <input matInput type="text" formControlName="email">
+                <mat-error *ngIf="email?.errors?.['required']">
+                    Email is required...
+                </mat-error>
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>Create a password</mat-label>
+                <input matInput type="text" formControlName="password">
+                <mat-error *ngIf="password?.errors?.['required']">
+                    Password is required...
+                </mat-error>
+            </mat-form-field>
+
+            
+            <mat-form-field>
+                <mat-label>What's your Name?</mat-label>
+                <input matInput type="text"  formControlName="name">
+                <mat-error *ngIf="name?.errors?.['required']">
+                    Name is required...
+                </mat-error>
+            </mat-form-field>
+            <p>Have an account Already?<a routerLink="/login">login</a></p>
+            <button mat-raised-button color="primary" type="submit" [disabled]="!registrationForm.valid">
+                <mat-icon>save</mat-icon>
+            </button>
+        </form>
+        
+</div>
+</div>
